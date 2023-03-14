@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Bokeh plot"
+date:   2023-03-14 11:11:37 +0100
+categories: bokeh
+---
+
+# Including a bokeh plot
+This is a plot showing crimes per hour by category that we made in week 6. 
+
+{% include week6.html %}
+
+
