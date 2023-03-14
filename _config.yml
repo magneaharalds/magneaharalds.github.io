@@ -29,7 +29,7 @@ twitter: ""
 github_username:  magneaharalds
 
 # Build settings
-theme: Tacktile
+theme: minima
 plugins:
   - jekyll-feed
 
