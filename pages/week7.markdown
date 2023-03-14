@@ -2,6 +2,7 @@
 layout: page
 title: Week 7
 permalink: /week7/
+published: false
 ---
 
 # Include a static image

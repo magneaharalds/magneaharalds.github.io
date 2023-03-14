@@ -3,12 +3,13 @@ layout: post
 title:  "Step 7: Add content to your site"
 date:   2023-03-14 11:11:37 +0100
 categories: week7
+image: /assets/images/cool_cat.jpg
 ---
 
 # Include a static image
 This is an image of a cool cat
 
-![A cool cat](/images/cool_cat.jpg){:class="img-responsive"}
+![A cool cat](/assets/images/cool_cat.jpg){:class="img-responsive"}
 
 # Include a bokeh plot
 This is a plot showing crimes per hour by category that we made in week 6. 
