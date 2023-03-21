@@ -23,7 +23,7 @@ One reason for this sudden decrease around 2011 could be because of the decrimin
 {% include bokeh_inter.html %}
 
 ## Map (example)
-This map shows the number of vehicle thefts for each district of San Fransisco on Sundays. 
+This map shows the number oof drug-related crimies in each district of San Fransisco in the period 2003-2017.
 {% include map.html %}
 
 ## Conclusion
