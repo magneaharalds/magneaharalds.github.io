@@ -29,7 +29,7 @@ We have created a plot showing drug crimes per year categorized by drug types. W
 
 {% include bokeh_inter.html %}
 <p align = "center">
-<b>Figure 2: Time series plot of drug/narcotic related crimes in San Francisco from 2003 to 2017 categorized by drug type.</b>
+<b>Figure 2: Time series plot of drug/narcotic related crimes in San Francisco from 2003 to 2017 categorized by drug type. Selecting different drug categories in the legend will add/remove their line from the plot and adjust the y-axis accordingly.</b>
 </p>
 
 We see the same decrease here around 2010/2011 as we saw in the calendarplot for most drug types. Like we suspected we see a big decrease in marijuana crimes around 2011 and another steep drop from 2016 to 2017 but in 2016 California legalized recreational marijuana which might explain this drop in crimes.
@@ -50,4 +50,4 @@ We map the police districts in San Francisco where we show the number of drug/na
 
 ## Conclusion and further analysis
 
-In this analysis we have highlighted some trends in drug/narcotic crimes in San Francisco and found some interesting articles and sites that explain these trends. There is definitely more interesting analysis that could be done, but we cannot include in this assignment. One idea is to look into the number of drug crimes by crime type in each district to see if there are any differences in which drugs are mostly used by districts.
+In this analysis we have highlighted some trends in drug/narcotic crimes in San Francisco and found some interesting articles and sites that explain these trends. There is definitely further interesting analysis that could be done, but we cannot include in this assignment. One idea is to look into the number of drug crimes by crime type in each district to see if there are any differences in which drugs are mostly used by districts. Another thing to investigate is getting the SF police data after 2018 and look into opiate crimes since widespread fentanyl use [started in 2013](https://www.cdc.gov/opioids/basics/epidemic.html) and our data only ranges to 2017. Having data after 2018 would also allow us to look into trends related to different drug types during the Covid-19 pandemic and if lockdown had an impact in drug related crimes.
