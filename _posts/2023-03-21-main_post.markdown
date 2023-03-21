@@ -10,21 +10,20 @@ In this assignment we will be looking into data about crimes in San Fransisco fr
 
 There are a total of 2,084,466 rows in the filtered data, each with 35 columns. It contains information about the type of crime, the time and date of the crime, the location of the crime, the district in which the crime took place, the resolution (arrested, booked etc.) and other not as relevant information. 
 
-We will specifically be looking into... 
-### Segja frá storyinu okkar
+We will specifically be looking into drug/narcotic crimes and how they have changed over the years. 
 
+We start with a calendar plot that shows how many drug/narcotic crimes were recorded each day over the years 2003-2017. 
 
-## Time series plot
-This is a calendar plot
+![Timseries plot](/assets/images/calplot.png){:class="img-responsive"}
 
-![A cool cat](/assets/images/calplot.png){:class="img-responsive"}
+On this plot we see that after year 2010/2011 drug related crimes seem to decrease steadily over the years until the end of the dataset. 
+
+One reason for this sudden decrease around 2011 could be because of the decriminalization of marijuana posession. [Source](https://www.gavel.io/automation/timeline-of-marijuana-laws-in-california). To look further into this we plot the drug related crimes according to which drug they are related to. 
+
+{% include bokeh_inter.html %}
 
 ## Map (example)
 This map shows the number of vehicle thefts for each district of San Fransisco on Sundays. 
 {% include map.html %}
-
-## Interactive map (example)
-This is a plot showing crimes per hour by category that we made in week 6. 
-{% include week6.html %}
 
 ## Conclusion
