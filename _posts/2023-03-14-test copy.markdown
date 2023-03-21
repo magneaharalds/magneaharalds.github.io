@@ -4,6 +4,7 @@ title:  "Step 7: Add content to your site"
 date:   2023-03-14 11:11:37 +0100
 categories: week7
 image: /assets/images/cool_cat.jpg
+published: false
 ---
 
 # Include a static image

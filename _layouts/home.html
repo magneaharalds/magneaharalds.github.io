@@ -10,6 +10,13 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
+    {% for post in site.posts limit:1 %}
+      <!-- Show all contents of the first post -->
+      {{ post.content }}
+    {% endfor %}
+  {%- endif -%}
+
+  <!-- {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
@@ -33,6 +40,8 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
-  {%- endif -%}
+  {%- endif -%} -->
 
 </div>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
