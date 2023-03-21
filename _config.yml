@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Landsliðið í Social Data
+title: Social Data Analysis (02806)
 email: s222988@dtu.dk
 description: >- # this means to ignore newlines until "baseurl:"
-  A website created by Magnea Haraldsdóttir, Margrét Vala Þórisdóttir and Signý Kristín Sigurjónsdóttir
+  A website created by Magnea Haraldsdóttir (s212946), Margrét Vala Þórisdóttir (s222984) and Signý Kristín Sigurjónsdóttir (s222988)
   for the course Social Data Analysis (02806) in DTU.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

@@ -10,9 +10,11 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    {% for post in site.posts limit:1 %}
+    {% for post in site.posts %}
       <!-- Show all contents of the first post -->
+      <font size="+3.5">{{ post.title }}</font>
       {{ post.content }}
+      <hr>
     {% endfor %}
   {%- endif -%}
 

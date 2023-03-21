@@ -1,8 +1,27 @@
 ---
 layout: post
-title:  "Step 7: Add content to your site"
+title:  "Assignment 2"
 date:   2023-03-14 11:11:37 +0100
 categories: week8
 ---
 
-# Header
+## Introduction
+In this assignment we will be looking into data about crimes in San Fransisco from 2003 to 2018. The data is available at [DataSF](https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-Historical-2003/tmnf-yvry). Note that the original data is until May 2018, but we are only using data from 2003 through 2017.
+
+There are a total of 2,084,466 rows in the filtered data, each with 35 columns. It contains information about the type of crime, the time and date of the crime, the location of the crime, the district in which the crime took place, the resolution (arrested, booked etc.) and other not as relevant information. 
+
+We will specifically be looking into... 
+### Segja frá storyinu okkar
+
+
+## Time series plot
+
+## Map (example)
+This map shows the number of vehicle thefts for each district of San Fransisco on Sundays. 
+{% include map.html %}
+
+## Interactive map (example)
+This is a plot showing crimes per hour by category that we made in week 6. 
+{% include week6.html %}
+
+## Conclusion

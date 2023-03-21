@@ -29,10 +29,25 @@ show(p)
 
 After saving it in `./_layouts`, it can be included in a markdown file with this line:
 
-{`% include week6.html %`}
+{`% include plot.html %`}
 
 This is a plot showing crimes per hour by category that we made in week 6. 
 {% include week6.html %}
+
+# Include a plotly plot
+Make a file `plot.html` with the following code:
+
+```python
+# Make the plot p
+p.write_html("plot.html")
+```
+
+After saving it in `./_layouts`, it can be included in a markdown file with this line:
+
+{`% include plot.html %`}
+
+This map shows the number of vehicle thefts for each district of San Fransisco on Sundays. 
+{% include map.html %}
 
 # Write latex equations
 $$
