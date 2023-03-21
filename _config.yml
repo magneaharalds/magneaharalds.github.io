@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Social Data Analysis (02806)
-email: s222988@dtu.dk
+# email: s222988@dtu.dk
 description: >- # this means to ignore newlines until "baseurl:"
   A website created by Magnea Haraldsdóttir (s212946), Margrét Vala Þórisdóttir (s222984) and Signý Kristín Sigurjónsdóttir (s222988)
   for the course Social Data Analysis (02806) in DTU.
