@@ -15,6 +15,9 @@ We will specifically be looking into...
 
 
 ## Time series plot
+This is a calendar plot
+
+![A cool cat](/assets/images/calplot.png){:class="img-responsive"}
 
 ## Map (example)
 This map shows the number of vehicle thefts for each district of San Fransisco on Sundays. 
