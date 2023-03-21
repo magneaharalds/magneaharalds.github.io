@@ -12,6 +12,7 @@ There are a total of 2,084,466 rows in the filtered data, each with 35 columns. 
 
 We will specifically be looking into drug/narcotic crimes and how they have changed over the years. 
 
+## Analysis
 We start with a calendar plot that shows how many drug/narcotic crimes were recorded each day over the years 2003-2017. 
 
 <p align = "center">
@@ -51,3 +52,23 @@ We map the police districts in San Francisco where we show the number of drug/na
 ## Conclusion and further analysis
 
 In this analysis we have highlighted some trends in drug/narcotic crimes in San Francisco and found some interesting articles and sites that explain these trends. There is definitely further interesting analysis that could be done, but we cannot include in this assignment. One idea is to look into the number of drug crimes by crime type in each district to see if there are any differences in which drugs are mostly used by districts. Another thing to investigate is getting the SF police data after 2018 and look into opiate crimes since widespread fentanyl use <a href="https://www.cdc.gov/opioids/basics/epidemic.html" target="_blank">started in 2013</a> and our data only ranges to 2017. Having data after 2018 would also allow us to look into trends related to different drug types during the Covid-19 pandemic and if lockdown had an impact in drug related crimes.
+
+## References
+The data used in this analysis:
+<a href="https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-Historical-2003/tmnf-yvry" target="_blank">Police Department Incident Reports (Historical 2003 to Present)</a>
+
+Marijuana laws in California:
+<a href="https://www.gavel.io/automation/timeline-of-marijuana-laws-in-california" target="_blank">Timeline of marijuana laws in California</a>
+
+The cocaine market:
+<a href="https://drugabuse.com/drugs/cocaine/history-statistics" target="_blank">History and Statistics of Cocaine</a>
+
+The drug problem in Tenderloin:
+<a href="https://www.sfchronicle.com/bayarea/article/These-charts-show-how-drug-incidents-in-the-16723745.php" target="_blank">Drug incidents in the Tenderloin over the past 20 years</a>
+
+A video showing the state of Tenderloin in 2020:
+<a href="https://www.youtube.com/watch?v=GWBzxr3c29s" target="_blank">Tenderloin: The Last Days of the War on Drugs</a>
+
+The Opioid Epidemic:
+<a href="https://www.cdc.gov/opioids/basics/epidemic.html" target="_blank">The Opioid Epidemic</a>
+
