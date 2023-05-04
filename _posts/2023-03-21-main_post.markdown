@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Assignment 2"
+id: assignment2
 date:   2023-03-14 11:11:37 +0100
 categories: week8
+published: false
 ---
 
 ## Introduction
