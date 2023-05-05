@@ -1,11 +1,12 @@
 /* The sidebar menu */
 .sidebar {
-  width: 20%;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 10%;
   left: 10px;
-  background: #fff;
+  background: #ffffff;
+  //background: transparent;
   overflow-x: hidden;
   padding: 8px 0;
 }
@@ -26,6 +27,10 @@
   color: #000;
 }
 
+.main {
+  margin-left: 250px; /* Same as the width of the sidebar */
+  //padding: 0px 10px;
+}
 
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
