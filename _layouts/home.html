@@ -12,8 +12,7 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     {% for post in site.posts %}
-      <font size="+3.5">{{ post.title }}</font>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}"><font size="+3.5">{{ post.title }}</font></a>
       {{ post.content }}
     {% endfor %}
   {%- endif -%}
