@@ -1,11 +1,17 @@
-<div class="sidebar">
+<!-- <div class="sidebar">
     <h2>Navigation</h2>
     {%- if site.posts.size > 0 -%}
-        {% for post in site.posts %}
+        {% for post in site.posts %} -->
             <!-- Show title of the posts and link to it -->
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <!-- <a href="{{ post.url | relative_url }}">{{ post.title }}</a> -->
             <!-- <hr> -->
-            {% endfor %}
+            <!-- {% endfor %}
         {%- endif -%}
-</div>
+</div> -->
   
+
+<div class="sidebar">
+    <div id="table-of-contents">
+        {% toc %}
+    </div>
+</div>

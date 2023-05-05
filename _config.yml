@@ -32,6 +32,13 @@ twitter: ""
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-toc
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      toc: true
 
   
 
