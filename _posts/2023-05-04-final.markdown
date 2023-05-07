@@ -4,21 +4,55 @@ title:  "Final assignment"
 id: assignment2
 date: 2023-05-04 20:26:37 +0200
 ---
-
-## Main title {#main-title}
-Lorem ipsum 
+# Analysis of the San Fransisco fire department response time to medical incidents in recent years
 
 ## Introduction {#introduction}
-Lorem ipsum dolor sit amet, 
+In this assignment we will analyze the response time of the San Fransisco fire department to medical incidents in the. The data is available at <a href="https://data.sfgov.org/Public-Safety/Fire-Department-Calls-for-Service/nuek-vuh3" target="_blank">DataSF</a>. 
 
-## Methods {#methods}
-Lorem ipsum dolor sit amet, 
 
-### Subsection 1 {#subsection-1}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+## The Data {#data}
 
-### Subsection 2 {#subsection-2}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+{% include final_plots/map_response_neighborhood.html %}
+<p align = "center">
+<b>Figure 1: A map of San Fransisco showing average response time for each neighborhood.</b>
+</p>
 
-## Results {#results}
-Lorem ipsum dolor sit amet,
+
+{% include final_plots/map_transport_neighborhood.html %}
+<p align = "center">
+<b>Figure 2: A map of San Fransisco showing average transport time for each neighborhood.</b>
+</p>
+
+{% include final_plots/response_transport_neighborhood_years.html %}
+<p align = "center">
+<b>Figure 3: The average response and transport times by neighborhood over the years.</b>
+</p>
+
+{% include final_plots/split_time.html %}
+<p align = "center">
+<b>Figure 4: The average response time by year, split into intake, queue and travel time.</b>
+</p>
+
+<p align = "center">
+<img src = "/assets/images/calplot_response.png" alt="Calendar plot" style="width:100%">
+</p>
+<p align = "center">
+<b>Figure 5: Calendar plot of the average response time per day in San Francisco from 2017 to 2022.</b>
+</p>
+
+<p align = "center">
+<img src = "/assets/images/calplot_transport.png" alt="Calendar plot" style="width:100%">
+</p>
+<p align = "center">
+<b>Figure 6: Calendar plot of the average transport time per day in San Francisco from 2017 to 2022.</b>
+</p>
+
+## Data Analysis {#data-analysis}
+
+
+
+
+## Conclusion {#conclusion}
+
+
+## References {#references}
