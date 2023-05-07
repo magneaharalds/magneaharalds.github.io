@@ -12,6 +12,9 @@ In this assignment we will analyze the response time of the San Fransisco fire d
 
 ## The Data {#data}
 
+
+
+
 {% include final_plots/map_response_neighborhood.html %}
 <p align = "center">
 <b>Figure 1: A map of San Fransisco showing average response time for each neighborhood.</b>
