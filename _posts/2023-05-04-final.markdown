@@ -7,17 +7,22 @@ date: 2023-05-04 20:26:37 +0200
 # Analysis of the San Fransisco fire department response time to medical incidents in recent years
 
 ## Introduction {#introduction}
-In this assignment we will analyze the response time of the San Fransisco fire department to medical incidents in the. The data is available at <a href="https://data.sfgov.org/Public-Safety/Fire-Department-Calls-for-Service/nuek-vuh3" target="_blank">DataSF</a>. 
+As the Covid-19 pandemic becomes a part of the past for most people it is still impacting the lives of first responders. In this article we will deep dive into data from the San Francisco fire department, highlighting the years 2017-2022. (The city of San Francisco has a population of  808.437 residents as of 2022  <a href="https://fred.stlouisfed.org/series/CASANF0POP" target="_blank">[1]</a> and covers 121.4 km^2 of land <a href="https://archive.ph/2020.02.13-235157/https://factfinder.census.gov/bkmk/table/1.0/en/DEC/10_SF1/GCTPH1.CY07/0500000US06075#selection-651.0-651.5" target="_blank">[2]</a>.) The 911 dispatchers in San Francisco receive on average around EINHVER TALA number of calls per day. In the pandemic San Francisco usually had a lower number of Covid-19 cases per capita than the average in the USA. That on the other hand changed at the end of December when the whole world had been dealing with the delta wave and then omicron hit. That’s when covid cases in San Francisco really started increasing.
+
+We therefore want to look into how this massive amount of Covid cases impacted the fire department in San Francisco (FDSF), more specifically we will look into how the response time in FDSF has developed through the years.  We also want to investigate how the response time varies neighborhood to neighborhood. The data we will use for this analysis is available at <a href="https://data.sfgov.org/Public-Safety/Fire-Department-Calls-for-Service/nuek-vuh3" target="_blank">DataSF</a>. 
 
 
 ## The Data {#data}
+
+We will start by looking at the average response time per month over the years 2012-2022 for different call types. The most common call type is Medical incidents
+
 
 {% include final_plots/bokeh_call_types.html %}
 <p align = "center">
 <b>Figure 0: the average response time by call type over the years and months.</b>
 </p>
 
-## More
+
 
 {% include final_plots/map_response_neighborhood.html %}
 <p align = "center">
@@ -61,3 +66,7 @@ In this assignment we will analyze the response time of the San Fransisco fire d
 
 
 ## References {#references}
+[1] <https://fred.stlouisfed.org/series/CASANF0POP>
+
+[2] <https://archive.ph/2020.02.13-235157/https://factfinder.census.gov/bkmk/table/1.0/en/DEC/10_SF1/GCTPH1.CY07/0500000US06075#selection-651.0-651.5>
+
