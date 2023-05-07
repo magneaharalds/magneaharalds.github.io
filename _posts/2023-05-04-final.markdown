@@ -50,8 +50,6 @@ In this assignment we will analyze the response time of the San Fransisco fire d
 ## Data Analysis {#data-analysis}
 
 
-
-
 ## Conclusion {#conclusion}
 
 

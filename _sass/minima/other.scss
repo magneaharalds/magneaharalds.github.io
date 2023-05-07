@@ -1,12 +1,31 @@
-.github_button {
-    border-radius: 25px;
+.github_button,
+.github_button:visited {
     color: #4078c0;
+    background-color: white;
+    border-radius: 25px;
     padding: 15px 25px;
     text-decoration: none;
 }
   
-.github_button:hover {
-    background-color: #4078c0;
+.github_button:hover,
+.github_button:hover:visited {
     color: white;
+    background-color: #4078c0;
+    text-decoration: none;
+}
+
+.notebook_button,
+.notebook_button:visited {
+    color: #d6743f;
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+  
+.notebook_button:hover,
+.notebook_button:hover:visited {
+    color: white;
+    background-color: #d6743f;
     text-decoration: none;
 }
