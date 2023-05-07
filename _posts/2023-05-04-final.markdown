@@ -22,6 +22,11 @@ We will start by looking at the average response time per month over the years 2
 <b>Figure 0: the average response time by call type over the years and months.</b>
 </p>
 
+{% include final_plots/calls_per_day.html %}
+<p align = "center">
+<b>Figure 0: the Average number of calls over the years and months.</b>
+</p>
+
 
 
 {% include final_plots/map_response_neighborhood.html %}
