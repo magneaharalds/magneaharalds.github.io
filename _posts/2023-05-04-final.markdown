@@ -14,8 +14,7 @@ We therefore want to look into how this massive amount of Covid cases impacted t
 
 ## The Data {#data}
 
-We will start by looking at the average response time per month over the years 2012-2022 for different call types. The most common call type is Medical incidents
-
+We will start by looking at the average response time per month over the years 2012-2022 for different call types. The most common call types in the data set are Medical incidents and Traffic Collision, and another interesting call type is Structure Fire. This is why we have choisen these three call types to display in figure 0. In Figure 0 we see that the average response time per month Medical Incidents has seen an increase starting mid of 2020 as well as having a peek in August 2014. We also see a similar peek for Traffick Collision in 2014 but we see a steap decrease at the beginning of the pandemic and it has been lower than it was before the pandemic. It is quite interesting to see this increase in Medical Incident response time and decrease in Traffic collision response time compared to the trends before the pandemic. To investigate this further we need to see how the trend in overall average calls per day changes. This can be seen in figure 1 and in fact we see a drop in the number of calls per day. We see that clearly something is going on in the Medical incident respons time and we will look further into that.
 
 {% include final_plots/bokeh_call_types.html %}
 <p align = "center">
@@ -24,44 +23,44 @@ We will start by looking at the average response time per month over the years 2
 
 {% include final_plots/calls_per_day.html %}
 <p align = "center">
-<b>Figure 0: the Average number of calls over the years and months.</b>
+<b>Figure 1: the Average number of calls over the years and months.</b>
 </p>
 
 
 
 {% include final_plots/map_response_neighborhood.html %}
 <p align = "center">
-<b>Figure 1: A map of San Fransisco showing average response time for each neighborhood.</b>
+<b>Figure 2: A map of San Fransisco showing average response time for each neighborhood.</b>
 </p>
 
 
 {% include final_plots/map_transport_neighborhood.html %}
 <p align = "center">
-<b>Figure 2: A map of San Fransisco showing average transport time for each neighborhood.</b>
+<b>Figure 3: A map of San Fransisco showing average transport time for each neighborhood.</b>
 </p>
 
 {% include final_plots/response_transport_neighborhood_years.html %}
 <p align = "center">
-<b>Figure 3: The average response and transport times by neighborhood over the years.</b>
+<b>Figure 4: The average response and transport times by neighborhood over the years.</b>
 </p>
 
 {% include final_plots/split_time.html %}
 <p align = "center">
-<b>Figure 4: The average response time by year, split into intake, queue and travel time.</b>
+<b>Figure 5: The average response time by year, split into intake, queue and travel time.</b>
 </p>
 
 <p align = "center">
 <img src = "/assets/images/calplot_response.png" alt="Calendar plot" style="width:100%">
 </p>
 <p align = "center">
-<b>Figure 5: Calendar plot of the average response time per day in San Francisco from 2017 to 2022.</b>
+<b>Figure 6: Calendar plot of the average response time per day in San Francisco from 2017 to 2022.</b>
 </p>
 
 <p align = "center">
 <img src = "/assets/images/calplot_transport.png" alt="Calendar plot" style="width:100%">
 </p>
 <p align = "center">
-<b>Figure 6: Calendar plot of the average transport time per day in San Francisco from 2017 to 2022.</b>
+<b>Figure 7: Calendar plot of the average transport time per day in San Francisco from 2017 to 2022.</b>
 </p>
 
 ## Data Analysis {#data-analysis}
