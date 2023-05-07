@@ -12,8 +12,12 @@ In this assignment we will analyze the response time of the San Fransisco fire d
 
 ## The Data {#data}
 
+{% include final_plots/bokeh_call_types.html %}
+<p align = "center">
+<b>Figure 0: the average response time by call type over the years and months.</b>
+</p>
 
-
+## More
 
 {% include final_plots/map_response_neighborhood.html %}
 <p align = "center">
