@@ -39,39 +39,44 @@ To dive deeper into the evolution of the average response time for medical incid
 Since response time is the time from when one calls 911 to the time a firefighter or EMT is at your location there is a lot happening in the backround. We have split the response time into three subtimes called Intake time, Queue time and Travel time. Intake time 
 
 
+{% include final_plots/response_transport_day_period.html %}
+<p align = "center">
+<b>Figure X: The average response and transport times by time of day over the years.</b>
+</p>
+
 {% include final_plots/map_response_neighborhood.html %}
 <p align = "center">
-<b>Figure 2: A map of San Fransisco showing average response time for each neighborhood.</b>
+<b>Figure X: A map of San Fransisco showing average response time for each neighborhood.</b>
 </p>
 
 
 {% include final_plots/map_transport_neighborhood.html %}
 <p align = "center">
-<b>Figure 3: A map of San Fransisco showing average transport time for each neighborhood.</b>
+<b>Figure X: A map of San Fransisco showing average transport time for each neighborhood.</b>
 </p>
 
 {% include final_plots/response_transport_neighborhood_years.html %}
 <p align = "center">
-<b>Figure 4: The average response and transport times by neighborhood over the years.</b>
+<b>Figure X: The average response and transport times by neighborhood over the years.</b>
 </p>
 
 {% include final_plots/split_time.html %}
 <p align = "center">
-<b>Figure 5: The average response time by year, split into intake, queue and travel time.</b>
+<b>Figure X: The average response time by year, split into intake, queue and travel time.</b>
 </p>
 
 <p align = "center">
 <img src = "/assets/images/calplot_response.png" alt="Calendar plot" style="width:100%">
 </p>
 <p align = "center">
-<b>Figure 6: Calendar plot of the average response time per day in San Francisco from 2017 to 2022.</b>
+<b>Figure X: Calendar plot of the average response time per day in San Francisco from 2017 to 2022.</b>
 </p>
 
 <p align = "center">
 <img src = "/assets/images/calplot_transport.png" alt="Calendar plot" style="width:100%">
 </p>
 <p align = "center">
-<b>Figure 7: Calendar plot of the average transport time per day in San Francisco from 2017 to 2022.</b>
+<b>Figure X: Calendar plot of the average transport time per day in San Francisco from 2017 to 2022.</b>
 </p>
 
 ## Data Analysis {#data-analysis}
