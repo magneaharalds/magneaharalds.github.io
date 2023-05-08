@@ -18,14 +18,25 @@ We will start by looking at the average response time per month over the years 2
 
 {% include final_plots/bokeh_call_types.html %}
 <p align = "center">
-<b>Figure 0: the average response time by call type over the years and months.</b>
+<b>Figure 1: the average response time by call type over the years and months.</b>
 </p>
 
 {% include final_plots/calls_per_day.html %}
 <p align = "center">
-<b>Figure 1: the Average number of calls over the years and months.</b>
+<b>Figure 2: the Average number of calls over the years and months.</b>
 </p>
 
+To dive deeper into the evolution of the average response time for medical incidents we can look at a calendar plot (figure 3) of the average response time per day for the years 2017-2022. In this plot we see that there is a gradual increase in the response time in 2021 and then in 2022 it remains quite constant at that new higher level of response time with the exception of the first weeks of the year where the average response time seems to reach a peak. Note that for the first 10 days in April the dataset is lacking data on the calls. This increase in response time starts around the same time as the delta variant of Covid-19 starts to become dominant and then this peak we see at the beginning of the year 2022 is consistent with a huge wave of covid cases the city saw in December/ early January.
+
+<p align = "center">
+<img src = "/assets/images/calplot_response.png" alt="Calendar plot" style="width:100%">
+</p>
+<p align = "center">
+<b>Figure 3: Calendar plot of the average response time per day for medical incidents in San Francisco from 2017 to 2022.</b>
+</p>
+
+
+Since response time is the time from when one calls 911 to the time a firefighter or EMT is at your location there is a lot happening in the backround. We have split the response time into three subtimes called Intake time, Queue time and Travel time. Intake time 
 
 
 {% include final_plots/map_response_neighborhood.html %}
