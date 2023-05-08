@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="8548e364-eb0b-49df-b379-686fb85a7959" data-root-id="p5103" style="display: contents;"></div>
+  
+    <script type="application/json" id="p5231">
+      {"905a2c84-f654-4d44-97b5-8ac7ae6c5efd":{"version":"3.1.0","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Figure","id":"p5103","attributes":{"width":800,"height":500,"x_range":{"type":"object","name":"FactorRange","id":"p5112","attributes":{"factors":["Year","period_of_day_Morning","period_of_day_Night","neighborhood_Bayview Hunters Point","neighborhood_Lone Mountain/USF","period_of_day_Afternoon","period_of_day_Evening","neighborhood_Presidio","neighborhood_Visitacion Valley","neighborhood_Lincoln Park"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p5105"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p5116"},"y_scale":{"type":"object","name":"LinearScale","id":"p5118"},"title":{"type":"object","name":"Title","id":"p5108"},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p5154","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p5100","attributes":{"selected":{"type":"object","name":"Selection","id":"p5102","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p5101"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAA=="},"shape":[10],"dtype":"int32","order":"little"}],["feature",{"type":"ndarray","array":["Year","period_of_day_Morning","period_of_day_Night","neighborhood_Bayview Hunters Point","neighborhood_Lone Mountain/USF","period_of_day_Afternoon","period_of_day_Evening","neighborhood_Presidio","neighborhood_Visitacion Valley","neighborhood_Lincoln Park"],"shape":[10],"dtype":"object","order":"little"}],["importance",{"type":"ndarray","array":{"type":"bytes","data":"YymezMI13z9hXkNn7JvFP0XQvHrlYLc/bU09KzCxnz+aU+CZh6eePy2NRWe8UZw/D/aqgJrxmj9S90cs47+VP9BqJqu6i5M/9gpRgB5jkz8="},"shape":[10],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p5155","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p5156"}}},"glyph":{"type":"object","name":"VBar","id":"p5151","attributes":{"x":{"type":"field","field":"feature"},"width":{"type":"value","value":0.7},"top":{"type":"field","field":"importance"},"line_color":{"type":"value","value":"firebrick"},"line_alpha":{"type":"value","value":0.7},"fill_color":{"type":"value","value":"firebrick"},"fill_alpha":{"type":"value","value":0.7},"hatch_color":{"type":"value","value":"firebrick"},"hatch_alpha":{"type":"value","value":0.7}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p5152","attributes":{"x":{"type":"field","field":"feature"},"width":{"type":"value","value":0.7},"top":{"type":"field","field":"importance"},"line_color":{"type":"value","value":"firebrick"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"firebrick"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"firebrick"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p5153","attributes":{"x":{"type":"field","field":"feature"},"width":{"type":"value","value":0.7},"top":{"type":"field","field":"importance"},"line_color":{"type":"value","value":"firebrick"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"firebrick"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"firebrick"},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p5107","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p5133"},{"type":"object","name":"WheelZoomTool","id":"p5134"},{"type":"object","name":"BoxZoomTool","id":"p5135","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p5136","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p5137"},{"type":"object","name":"ResetTool","id":"p5138"},{"type":"object","name":"HelpTool","id":"p5139"},{"type":"object","name":"HoverTool","id":"p5157","attributes":{"renderers":"auto","tooltips":[["Feature","@feature"],["Importance","@importance{0.000}"]]}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p5126","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p5127","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p5129"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p5128"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p5120","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p5121"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p5123"},"major_label_orientation":1.5707963267948966,"major_label_policy":{"type":"object","name":"AllLabels","id":"p5122"}}}],"center":[{"type":"object","name":"Grid","id":"p5125","attributes":{"axis":{"id":"p5120"}}},{"type":"object","name":"Grid","id":"p5132","attributes":{"dimension":1,"axis":{"id":"p5126"}}}]}}],"callbacks":{"type":"map"}}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p5231').textContent;
+              const render_items = [{"docid":"905a2c84-f654-4d44-97b5-8ac7ae6c5efd","roots":{"p5103":"8548e364-eb0b-49df-b379-686fb85a7959"},"root_ids":["p5103"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
