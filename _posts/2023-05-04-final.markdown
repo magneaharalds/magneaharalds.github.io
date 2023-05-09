@@ -7,14 +7,14 @@ date: 2023-05-04 20:26:37 +0200
 # Analysis of the San Fransisco fire department response time to medical incidents in recent years
 
 ## Introduction {#introduction}
-As the Covid-19 pandemic becomes a part of the past for most people it is still impacting the lives of first responders. In this article we will dive deep into data from the San Francisco fire department, highlighting the years 2017-2022. (The city of San Francisco has a population of  808.437 residents as of 2022  <a href="https://fred.stlouisfed.org/series/CASANF0POP" target="_blank">[1]</a> and covers 121.4 square kilometers of land <a href="https://archive.ph/2020.02.13-235157/https://factfinder.census.gov/bkmk/table/1.0/en/DEC/10_SF1/GCTPH1.CY07/0500000US06075#selection-651.0-651.5" target="_blank">[2]</a>.) The 911 dispatchers in San Francisco receive on average around EINHVER TALA number of calls per day. In the pandemic San Francisco usually had a lower number of Covid-19 cases per capita than the average in the USA. That on the other hand changed at the end of December when the whole world had been dealing with the delta wave and then omicron hit. That’s when covid cases in San Francisco really started increasing.
+As the Covid-19 pandemic becomes a part of the past for most people, it is still impacting the lives of first responders. In this article we will dive deep into data from the San Francisco fire department, highlighting the years 2017-2022. (The city of San Francisco has a population of  808.437 residents as of 2022  <a href="https://fred.stlouisfed.org/series/CASANF0POP" target="_blank">[1]</a> and covers 121.4 square kilometers of land <a href="https://archive.ph/2020.02.13-235157/https://factfinder.census.gov/bkmk/table/1.0/en/DEC/10_SF1/GCTPH1.CY07/0500000US06075#selection-651.0-651.5" target="_blank">[2]</a>.) The 911 dispatchers in San Francisco receive on average around EINHVER TALA number of calls per day. In the pandemic San Francisco usually had a lower number of Covid-19 cases per capita than the average in the USA. That on the other hand changed at the end of December when the whole world had been dealing with the delta wave and then omicron hit. That’s when covid cases in San Francisco really started increasing.
 
 We therefore want to look into how this massive amount of Covid cases impacted the fire department in San Francisco (FDSF), more specifically we will look into how the response time in FDSF has developed through the years.  We also want to investigate how the response time varies neighborhood to neighborhood. The data we will use for this analysis is available at <a href="https://data.sfgov.org/Public-Safety/Fire-Department-Calls-for-Service/nuek-vuh3" target="_blank">DataSF</a>. 
 
 
-## The Data {#data}
+## The response time through out the years {#data}
 
-We will start by looking at the average response time per month over the years 2012-2022 for different call types. The most common call types in the data set are Medical incidents and Traffic Collision, and another interesting call type is Structure Fire. This is why we have choisen these three call types to display in figure 0. In Figure 0 we see that the average response time per month Medical Incidents has seen an increase starting mid of 2020 as well as having a peek in August 2014. We also see a similar peek for Traffick Collision in 2014 but we see a steap decrease at the beginning of the pandemic and it has been lower than it was before the pandemic. It is quite interesting to see this increase in Medical Incident response time and decrease in Traffic collision response time compared to the trends before the pandemic. To investigate this further we need to see how the trend in overall average calls per day changes. This can be seen in figure 1 and in fact we see a drop in the number of calls per day. We see that clearly something is going on in the Medical incident respons time and we will look further into that.
+We will start by looking at the average response time per month over the years 2012-2022 for different call types. The most common call types in the data set are Medical incidents and Traffic Collision, and another interesting call type is Structure Fire. This is why we have choisen these three call types to display in figure 1. In Figure 1 we see that the average response time per month of Medical Incidents has seen an increase starting mid of 2020 as well as having a peak in August 2014. We also see a similar peak for Traffic Collision in 2014 but we see a steep decrease at the beginning of the pandemic and it has been lower than it was before the pandemic. It is quite interesting to see this increase in Medical Incident response time and decrease in Traffic collision response time compared to the trends before the pandemic. To investigate this further we need to see how the trend in overall average calls per day changes. This can be seen in figure 2 and in fact we see a drop in the number of calls per day. We see that clearly something is going on in the Medical Incident response time and we will look further into that.
 
 {% include final_plots/bokeh_call_types.html %}
 <p align = "center">
@@ -36,13 +36,39 @@ To dive deeper into the evolution of the average response time for medical incid
 </p>
 
 
-Since response time is the time from when one calls 911 to the time a firefighter or EMT is at your location there is a lot happening in the backround. We have split the response time into three subtimes called Intake time, Queue time and Travel time. Intake time 
+Since response time is the time from when one calls 911 to the time a firefighter or EMT is at your location there is a lot happening in the backround. We have split the response time into three subtimes called Intake time, Queue time and Travel time. Intake time is the time it takes from the 911 dispatcher answers to the time a fire department unit is requested. Queue time is the time it takes from the request being made until a unit responds. Travel time is then the time it takes for the unit to reach the location of the caller. We see that intake time holds pretty steady over the years. We see the biggest increase in queue time and a bit of increase in response time. This suggests that queue time might be causing some of the increase in response time we are seeing in the plots above. This suggests, that the current number of ambulances and emergency response personnel does not manage to handle all the incoming calls in an optimal amount of time.
+
+Infact in 2014 and 2015 the city hired new paramedics as a repsonse to the increasing response time. In figure 1 we see that the response time does decrease indicating that this increase in personnel helped reduce the response time. 
+
+
+{% include final_plots/split_time.html %}
+<p align = "center">
+<b>Figure 4: The average response time by year, split into intake, queue and travel time.</b>
+</p>
+
+Even though the increased response time is most likely explained by shortage in staff to respond to the demand in services we want to investigate other factors that might be influencing the response time. One possible explanation might be traffic or other environmental factors, therefore we will look into the Travel time. The Travel time is defined as the time it takes for the ambulance to get from the place of incident to the hospital. We look at a similar calendar plot as we did for the response time in figure 5. We see that there clearly been a change in the travel time but it is very different to the changes we see in response time. In 2020 we see that the travel time decreases a great deal and then gradually through out 2021 it reaches similar response time as before 2020. This can be explained by the fact that in 2020 and a part of 2021 there were lockdowns in San Francisco so people either stayed home or even left the city. **HEIMILD FYRIR ÞESSU, fundum grein með þessu**
+
+Since the average transport time after covid never goes higher than the average transport time before the pandemic we can conclude that this increase is just a phenomenon in the response time. 
+
+<p align = "center">
+<img src = "/assets/images/calplot_transport.png" alt="Calendar plot" style="width:100%">
+</p>
+<p align = "center">
+<b>Figure 5: Calendar plot of the average transport time per day in San Francisco from 2017 to 2022.</b>
+</p>
+
+To compare the response time and the transport time even further we can look at a plot of the average response and transport time by the time of day through out the years. In figure 6 we see that the response time is less affected by the time of day than the transport time **HVAÐ ER HÆGT AÐ SEGJA MEIRA UM ÞETTA** 
+
 
 
 {% include final_plots/response_transport_day_period.html %}
 <p align = "center">
-<b>Figure X: The average response and transport times by time of day over the years.</b>
+<b>Figure 6: The average response and transport times by time of day over the years.</b>
 </p>
+
+## Response time in different neighborhoods {#neighborhoods}
+
+Now that we have explored the response time through out the years in San Francisco 
 
 {% include final_plots/map_response_neighborhood.html %}
 <p align = "center">
@@ -60,24 +86,7 @@ Since response time is the time from when one calls 911 to the time a firefighte
 <b>Figure X: The average response and transport times by neighborhood over the years.</b>
 </p>
 
-{% include final_plots/split_time.html %}
-<p align = "center">
-<b>Figure X: The average response time by year, split into intake, queue and travel time.</b>
-</p>
 
-<p align = "center">
-<img src = "/assets/images/calplot_response.png" alt="Calendar plot" style="width:100%">
-</p>
-<p align = "center">
-<b>Figure X: Calendar plot of the average response time per day in San Francisco from 2017 to 2022.</b>
-</p>
-
-<p align = "center">
-<img src = "/assets/images/calplot_transport.png" alt="Calendar plot" style="width:100%">
-</p>
-<p align = "center">
-<b>Figure X: Calendar plot of the average transport time per day in San Francisco from 2017 to 2022.</b>
-</p>
 
 ## Data Analysis {#data-analysis}
 
