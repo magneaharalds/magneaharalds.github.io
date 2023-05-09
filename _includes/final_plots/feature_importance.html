@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="b574348c-34da-42f4-9820-a780c03ca04f" data-root-id="p10989" style="display: contents;"></div>
+  
+    <script type="application/json" id="p11871">
+      {"27011735-bfa5-4c57-9083-ea737c9562fa":{"version":"3.1.1","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Figure","id":"p10989","attributes":{"width":800,"height":500,"x_range":{"type":"object","name":"FactorRange","id":"p10999","attributes":{"factors":["Year","period_of_day_Morning","period_of_day_Evening","neighborhood_Lone Mountain/USF","neighborhood_Tenderloin","neighborhood_Bayview Hunters Point","neighborhood_Treasure Island","neighborhood_Lakeshore","period_of_day_Night","neighborhood_Haight Ashbury"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p10991"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p11003"},"y_scale":{"type":"object","name":"LinearScale","id":"p11005"},"title":{"type":"object","name":"Title","id":"p10992","attributes":{"text":"Feature importances according to Random Forest"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p11041","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p10986","attributes":{"selected":{"type":"object","name":"Selection","id":"p10988","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p10987"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAA=="},"shape":[10],"dtype":"int32","order":"little"}],["feature",{"type":"ndarray","array":["Year","period_of_day_Morning","period_of_day_Evening","neighborhood_Lone Mountain/USF","neighborhood_Tenderloin","neighborhood_Bayview Hunters Point","neighborhood_Treasure Island","neighborhood_Lakeshore","period_of_day_Night","neighborhood_Haight Ashbury"],"shape":[10],"dtype":"object","order":"little"}],["importance",{"type":"ndarray","array":{"type":"bytes","data":"StKjwo/S3D/Gj4XIy4DTPwDhlTCUGqY/4qgyUbzXoj9OKAwTRRmgP0CzSqAU6Jw/hQ5eGVDxmD+BPBmF/9mVP12IuFxV9IE/NMk6CFY7gT8="},"shape":[10],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p11042","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p11043"}}},"glyph":{"type":"object","name":"VBar","id":"p11038","attributes":{"x":{"type":"field","field":"feature"},"width":{"type":"value","value":0.7},"top":{"type":"field","field":"importance"},"line_color":{"type":"value","value":"firebrick"},"line_alpha":{"type":"value","value":0.7},"fill_color":{"type":"value","value":"firebrick"},"fill_alpha":{"type":"value","value":0.7},"hatch_color":{"type":"value","value":"firebrick"},"hatch_alpha":{"type":"value","value":0.7}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p11039","attributes":{"x":{"type":"field","field":"feature"},"width":{"type":"value","value":0.7},"top":{"type":"field","field":"importance"},"line_color":{"type":"value","value":"firebrick"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"firebrick"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"firebrick"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p11040","attributes":{"x":{"type":"field","field":"feature"},"width":{"type":"value","value":0.7},"top":{"type":"field","field":"importance"},"line_color":{"type":"value","value":"firebrick"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"firebrick"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"firebrick"},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p10997","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p11020"},{"type":"object","name":"WheelZoomTool","id":"p11021"},{"type":"object","name":"BoxZoomTool","id":"p11022","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p11023","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p11024"},{"type":"object","name":"ResetTool","id":"p11025"},{"type":"object","name":"HelpTool","id":"p11026"},{"type":"object","name":"HoverTool","id":"p11044","attributes":{"renderers":"auto","tooltips":[["Feature","@feature"],["Importance","@importance{0.000}"]]}}]}},"toolbar_location":null,"left":[{"type":"object","name":"LinearAxis","id":"p11013","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p11014","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p11015"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p11016"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p11007","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p11008"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p11009"},"major_label_orientation":1.5707963267948966,"major_label_policy":{"type":"object","name":"AllLabels","id":"p11010"}}}],"center":[{"type":"object","name":"Grid","id":"p11012","attributes":{"axis":{"id":"p11007"}}},{"type":"object","name":"Grid","id":"p11019","attributes":{"dimension":1,"axis":{"id":"p11013"}}}]}}],"callbacks":{"type":"map"}}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p11871').textContent;
+              const render_items = [{"docid":"27011735-bfa5-4c57-9083-ea737c9562fa","roots":{"p10989":"b574348c-34da-42f4-9820-a780c03ca04f"},"root_ids":["p10989"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>

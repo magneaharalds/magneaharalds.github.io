@@ -86,6 +86,11 @@ Now that we have explored the response time through out the years in San Francis
 <b>Figure X: The average response and transport times by neighborhood over the years.</b>
 </p>
 
+{% include final_plots/feature_importance.html %}
+<p align = "center">
+<b>Figure X: Feature importances according to Random Forest.</b>
+</p>
+
 
 
 ## Data Analysis {#data-analysis}
